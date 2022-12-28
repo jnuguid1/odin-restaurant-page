@@ -113,6 +113,8 @@ li {
 #contact-section {
   display: flex;
   justify-content: center;
+  height: 70vh;
+  align-items: start;
 }
 
 #contact-card {
@@ -125,4 +127,14 @@ li {
 
 .contact-card p {
   margin-bottom: 24px;
+}
+
+#footer-section {
+  width: 100%;
+  background-color: black;
+  opacity: 90%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
 }

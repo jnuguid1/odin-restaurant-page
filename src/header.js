@@ -1,6 +1,7 @@
 import loadHome from './home';
 import loadMenu from './menu';
 import loadContact from './contact';
+import loadFooter from './footer';
 
 const loadHeader = () => {
   const content = document.querySelector('#content');
@@ -39,21 +40,30 @@ const switchTabHome = () => {
   const content = document.querySelector('#content');
   var currentTab = content.childNodes[1];
   content.removeChild(currentTab);
+  var footer = content.childNodes[1];
+  content.removeChild(footer);
   loadHome();
+  loadFooter();
 }
 
 const switchTabMenu = () => {
   const content = document.querySelector('#content');
   var currentTab = content.childNodes[1];
   content.removeChild(currentTab);
+  var footer = content.childNodes[1];
+  content.removeChild(footer);
   loadMenu();
+  loadFooter();
 }
 
 const switchTabContact = () => {
   const content = document.querySelector('#content');
   var currentTab = content.childNodes[1];
   content.removeChild(currentTab);
+  var footer = content.childNodes[1];
+  content.removeChild(footer);
   loadContact();
+  loadFooter();
 }
 
 export default loadHeader;
