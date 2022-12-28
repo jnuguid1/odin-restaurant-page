@@ -25,7 +25,7 @@ const loadHeader = () => {
   contactTab.appendChild(contactTabText);
   homeTab.addEventListener('click', switchTabHome);
   menuTab.addEventListener('click', switchTabMenu);
-  //contactTab.addEventListener('click', switchTabContact);
+  contactTab.addEventListener('click', switchTabContact);
   
   nav.appendChild(homeTab);
   nav.appendChild(menuTab);
@@ -48,6 +48,13 @@ const switchTabMenu = () => {
   var currentTab = content.childNodes[1];
   content.removeChild(currentTab);
   loadMenu();
+}
+
+const switchTabContact = () => {
+  const content = document.querySelector('#content');
+  var currentTab = content.childNodes[1];
+  content.removeChild(currentTab);
+  loadContact();
 }
 
 const loadWebsite = () => {

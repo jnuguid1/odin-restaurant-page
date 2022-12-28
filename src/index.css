@@ -109,3 +109,20 @@ li {
 .food-card h2 {
   margin: 12px;
 }
+
+#contact-section {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-card {
+  padding: 16px;
+  background-color: var(--card-color);
+  opacity: 90%;
+  margin-top: 24px;
+  font-family: var(--font);
+}
+
+.contact-card p {
+  margin-bottom: 24px;
+}
