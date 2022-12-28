@@ -1,4 +1,3 @@
-import contact from './contact';
 import loadHome from './home';
 import loadMenu from './menu';
 import loadContact from './contact';
@@ -15,9 +14,15 @@ const loadHeader = () => {
   const homeTab = document.createElement('li');
   const menuTab = document.createElement('li');
   const contactTab = document.createElement('li');
-  homeTab.textContent = 'Home';
-  menuTab.textContent = 'Menu';
-  contactTab.textContent = 'Contact';
+  const homeTabText = document.createElement('a');
+  const menuTabText = document.createElement('a');
+  const contactTabText = document.createElement('a');
+  homeTabText.textContent = 'Home';
+  menuTabText.textContent = 'Menu';
+  contactTabText.textContent = 'Contact';
+  homeTab.appendChild(homeTabText );
+  menuTab.appendChild(menuTabText);
+  contactTab.appendChild(contactTabText);
   homeTab.addEventListener('click', switchTabHome);
   menuTab.addEventListener('click', switchTabMenu);
   //contactTab.addEventListener('click', switchTabContact);
